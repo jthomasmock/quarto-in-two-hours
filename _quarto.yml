@@ -18,7 +18,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: Day 1
+      - text: Workshop
         menu: 
           - href: materials/01-intro-quarto.qmd
             text: "Intro to Quarto"
@@ -28,20 +28,6 @@ website:
             text: "Code and Editors"
           - href: materials/04-static-documents.qmd
             text: "Static Documents" 
-      - text: Day 2
-        menu: 
-          - href: materials/05-presentations.qmd
-            text: "Presentations"
-          - href: materials/06-websites.qmd
-            text: "Websites & Books"
-          - href: materials/07-plots-tables.qmd
-            text: "Plots & Tables"
-          - href: materials/08-advanced-knitr.qmd
-            text: "Advanced Quarto"
-      - href: schedule.qmd
-        text: "Schedule"
-      - href: workshop-materials.qmd
-        text: Workshop
     right: 
       - href: "https://quarto.org/"
         text: "Quarto Docs"
@@ -52,7 +38,7 @@ website:
   sidebar: 
     style: docked
     contents: 
-      - section: "Day 1"
+      - section: "Workshop"
         contents: 
           - href: materials/01-intro-quarto.qmd
             text: "Intro to Quarto"
@@ -62,16 +48,6 @@ website:
             text: "Code and Editors"
           - href: materials/04-static-documents.qmd
             text: "Static Documents"
-      - section: "Day 2"
-        contents:
-          - href: materials/05-presentations.qmd
-            text: "Presentations"
-          - href: materials/06-websites.qmd
-            text: "Websites & Books"
-          - href: materials/07-plots-tables.qmd
-            text: "Plots & Tables"
-          - href: materials/08-advanced-knitr.qmd
-            text: "Advanced Quarto"
 
 format:
   html:

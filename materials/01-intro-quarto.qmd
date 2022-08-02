@@ -5,7 +5,7 @@ format:
     width: 1920
     height: 1080
     logo: "https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png"
-    footer: "[Get started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/)"
+    footer: "[Quarto in 2 Hours](https://jthomasmock.github.io/quarto-in-two-hours/)"
     css: ["theme/theme.css"]
     theme: simple
 editor: source
@@ -28,88 +28,15 @@ library(gtsummary)
 
 <h3>Tom Mock, RStudio PBC</h3>
 
-<h3>2022-07-25</h3>
+<h3>2022-08-02</h3>
 
 <br>
 
 ## 
 
-### `r fontawesome::fa("wifi")` WiFi
-
--   Username: `conf22`
--   Password: `together!` [(at last!)]{style="color: #d3d3d3;"}
-
-### Sli.do
-
--   Anonymous questions for real-time feedback
--   Got to <https://slido.com> and use code: `#start-quarto`
--   Or use this direct link <https://app.sli.do/event/8QAGYPG5wgYFJBEtktoeFN>
-
-## 
-
-### Gender Neutral Bathrooms `r fontawesome::fa("toilet")` 
-
--   There are gender neutral bathrooms by the National Harbor rooms.
-
-### Specialty Rooms
-
--   The meditation room is located at National Harbor 9. Open 8am - 5pm, Monday - Thursday. The hotel also has a dedicated room behind the reception.
--   The lactation room is located at Potomac Dressing Room. Open 8am - 5pm, Monday - Thursday.
-
-### Lanyards
-
--   Participants who do not wish to be photographed have red lanyards, please note everyone's lanyard colors befor taking a photo and respect their choices.
-
-## Code of Conduct
-
-Please read and review the entire Code of Conduct carefully: <https://www.rstudio.com/conference/2022/2022-conf-code-of-conduct/>
-
-### COVID-19
-
-> RStudio requires that in-person attendees be fully vaccinated against COVID-19 prior to the start of the event.
->
-> RStudio requires that you wear a mask that fully covers your mouth and nose at all times in all public spaces. We strongly recommend that you use a correctly fitted N95, KN95, or similar particulate filtering mask; we will have a limited supply available upon request.
-
--   You can remove your mask to briefly drink/eat during breaks in the hall but please refrain from removing your mask in the workshop room itself
-
-## Code of Conduct
-
-Please read and review the entire Code of Conduct carefully: <https://www.rstudio.com/conference/2022/2022-conf-code-of-conduct/>
-
-### Anti-Harassment
-
-> We expect everyone at rstudio::conf, whether attending in-person or virtually, to contribute to a welcoming, safe, and tolerant environment.
-
-### Reporting
-
-You can make a personal report:
-
-**In person:** Contact any rstudio::conf staff member, identifiable by their **orange** staff t-shirt shirt, or visit the conference registration desk.
-
-**By email:** Send a message to conf\@rstudio.com; event organizers will respond promptly.
-
-**By phone:** Call 844-448-1212; this phone number will be monitored for the duration of the event.
-
-## General Info
-
--   rstudio::conf 2022 schedule: <https://www.rstudio.com/conference/2022/schedule/>
--   Join or chat for rstudio::conf 2022 virtually: <https://www.rstudio.com/blog/rstudio-conf-2022-virtual/>
--   Watch live stream of talks on day of conference: <https://www.rstudio.com/conference/>
--   The "Lounge" - a friendly place to talk with Open Source team, Academy/RStudio Cloud, or talk "Data Science at Work"
--   Conference registration desk - a general catch-all for guidance
-
-[Need help?]{.fragment}
-
-[Look for orange shirts!]{.r-fit-text .fragment style="color: #EE6331;"}
-
 #  {background-color="#447099"}
 
 [Hello Quarto]{.r-fit-text}
-
-## Hello Learners
-
--   Go to <https://slido.com> and use code: `#start-quarto`
--   Or use this direct link <https://app.sli.do/event/8QAGYPG5wgYFJBEtktoeFN>
 
 ## We assume
 
@@ -145,33 +72,10 @@ Find me at:
 `r fa("envelope")` [thomas\@rstudio.com](mailto:thomas@rstudio.com)
 :::
 
-## Your TAs
-
-::: {layout-ncol="2"}
-### Carlos Scheidegger - RStudio + Quarto
-
-![](images/carlos.jpeg){style="height: 300px;"}
-
-### Isabel Zimmerman - RStudio + Python/Vetiver
-
-![](images/isabel.png){style="height: 300px;"}
-
-### Katie Masiello - RStudio + Solutions Engineering
-
-![](images/katie.png){style="height: 300px;"}
-
-### Tan Ho - ML Engineer at Zelus Analytics
-
-![](images/tan.jpeg){style="height: 300px;"}
-:::
-
 ## Workshop Prep
 
--   Short-code to content: \<rstd.io/get-started-quarto\>
--   Are you on the latest version of RStudio i.e. [`v2022.07.0-548` or later](https://www.rstudio.com/products/rstudio/download/#download)?
--   Are you on the [latest version of Quarto](https://quarto.org/docs/get-started/) (preview `v1.0.35`)?
--   Have you cloned the GitHub repo from <https://github.com/jthomasmock/quarto-workshop.git>?
--   Installed the necessary packages?
+-   Short-code to content: 
+-   Are you on the latest version of RStudio i.e. [`v2022.07.1` or later](https://www.rstudio.com/products/rstudio/download/#download)?
 
 ``` r
 pkg_list <- c(
@@ -185,108 +89,11 @@ install.packages(pkg_list)
 
 [Great, let's get started!]{.r-fit-text}
 
-## Structure of the workshop
-
--   Lecture - 🤠
--   "Your turn" or "Our Turn" - 💻
--   Breaks - ☕
-
-. . .
-
-In-session:
-
--   `r fa("square", "yellow")` = Tom isn't explaining it well enough or I need time
-
--   `r fa("square", "purple")` = I have completed the "Our Turn"
-
--   Raised hand = I have a question for Tom/TA - please try and make eye-contact with me or the TA, based on I have a "general question" or I'm running into a code error.
-
--   Use the <https://slido.com> with code for questions: `#start-quarto`
-
-##  {background-image="https://images.unsplash.com/4/madebyvadim.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80" style="margin: auto;"}
-
-. . .
-
-<h1 style="color:black;background-color: rgba(255,255,255,0.85);padding:5px;line-height:2em; text-align: center; position: absolute; top: 40%; width: 100%;">
-
-Ease of Use VS Full Details
-
-</h1>
-
-## Pouring milk
-
-A straight-forward task - pour the boxed milk into the glass.
-
-::: columns
-::: {.column width="50%"}
-> Easy to use
-
-![](https://j.gifs.com/WPwJ1W.gif){width="750px"}
-:::
-
-::: {.column width="50%"}
-:::
-:::
-
-## Pouring milk
-
-A straight-forward task - pour the boxed milk into the glass.
-
-::: columns
-::: {.column width="50%"}
-> Easy to use
-
-![](https://j.gifs.com/WPwJ1W.gif){width="750px"}
-:::
-
-::: {.column width="50%"}
-> Understanding the full details
-
-![](https://j.gifs.com/z6BO57.gif){width="750px"}
-:::
-:::
-
 # `r fontawesome::fa("laptop-code", "white")` Our Turn {background-color="#447099" transition="slide-in"}
 
 -   Open ~~Sesame~~ RStudio
 -   If you haven't already, clone the workshop: `https://github.com/jthomasmock/quarto-workshop.git`
 -   Open the `quarto-workshop` RProject
-
-```{r}
-#| echo: false
-library(countdown)
-countdown_timer <- function(
-    minutes = 1, 
-    play_sound = TRUE, 
-    font_size = "2em", 
-    ...
-) {
-  countdown(
-    minutes = minutes,
-    # Fanfare when it's over
-    play_sound = play_sound,
-    # Set timer theme to match solarized colors
-    color_border              = "#404041",
-    color_text                = "white",
-    color_background = "#447099",
-    color_running_background  = "#72994E",
-    color_running_text        = "white",
-    color_finished_background = "#EE6331",
-    color_finished_text       = "white",
-    font_size = font_size,
-    ...
-  )
-}
-
-```
-
-<br>
-<br>
-
-```{R}
-#| echo: false
-countdown_timer(1)
-```
 
 ## Hello Quarto
 
@@ -552,19 +359,19 @@ quarto render my-favorite.ipynb --to html --execute
 
 Quarto comes out of the box with much better accessibility, better defaults, more options, and a much more consistent syntax.
 
-## Summary of Quarto \> RMarkdown
+## Summary of Quarto > RMarkdown
 
 -   Easier to organize/structure document and document layout
 -   Features largely cross-format
--   Better ability to integrate multiple languages in a PROJECT
--   Evaluate native language (R in knitr, Python/Julia in Jupyter)
+-   Batteries included (it's installed WITH latest version of RStudio)
+-   Better ability to integrate multiple languages in a PROJECT and evaluate code in native language (R in knitr, Python/Julia in Jupyter)
 -   HTML slides with `revealjs` are pandoc-compatible, so RStudio Visual Editor works with them
 
 ## Rendering
 
 1.  Render in RStudio
 
-![](https://quarto.org/docs/tools/images/rstudio-render.png)
+![](https://quarto.org/docs/tools/images/rstudio-render.png){fig-alt="A screenshot of the render button in RStudio"}
 
 . . .
 
@@ -589,21 +396,6 @@ library(quarto)
 quarto_render("document.qmd") # defaults to html
 quarto_render("document.qmd", output_format = "pdf")
 ```
-
-# `r fontawesome::fa("laptop-code", "white")` Our Turn {background-color="#447099" transition="slide-in"}
-
--   Use RStudio to create a new default Quarto document
--   Add a title and your name as the author
--   Change `format` to `html` theme to `sketchy`
--   Add toc
--   Create two sections, one with fact you want to learn and your favorite thing about R
--   Render it with RStudio button, then try with the R package and terminal
-
-```{R}
-#| echo: false
-countdown_timer(2)
-```
-
 
 ## What about for Data Science at Work?
 
@@ -878,51 +670,6 @@ quarto render --help
 -   Render via terminal with `quarto render history.qmd --to pdf`
 
 -   Compare to the HTML version
-
-```{R}
-#| echo: false
-countdown_timer(3)
-```
-
-## Resources
-
--   <https://quarto.org/>
--   [Quarto FAQ](https://quarto.org/docs/faq/)
--   [Quarto Discussions](https://github.com/quarto-dev/quarto-cli/discussions)
-
-## 
-
-[Quarto questions?]{.r-fit-text}
-
-# RStudio Refresher
-
-<https://r4ds.had.co.nz/introduction.html#prerequisites>
-
-![](https://d33wubrfki0l68.cloudfront.net/9a23d664f0f49bc2ef8e78bed6277dd48bd2b96d/af132/diagrams/rstudio-console.png)
-
-## RStudio Tips
-
--   Access command palette via: <kbd>`Cmd + Shift + P`</kbd> or <kbd>`Ctrl + Shift + P`</kbd>: more shortcuts in the [RStudio IDE cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/rstudio-ide.pdf) or [RStudio Support](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts-in-the-RStudio-IDE)
-
-. . .
-
--   Search for and open file with <kbd>`Ctrl + I`</kbd>
-
-. . .
-
--   RStudio pane and Pane Layout
-
-. . .
-
--   R console vs [`terminal`](https://support.rstudio.com/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE)
-
-. . .
-
--   RStudio [Background jobs](https://www.rstudio.com/blog/rstudio-1-2-jobs/)
-
-. . .
-
--   RStudio [Visual Editor](https://quarto.org/docs/visual-editor/) mode
 
 ## CLI Overview
 

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tom Mock">
 
-<title>Get Started with Quarto - rstudio::conf 2022 Workshop</title>
+<title>Get Started with Quarto - Getting Started with Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,14 +119,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<meta name="twitter:title" content="Get Started with Quarto - rstudio::conf 2022 Workshop">
+<meta name="twitter:title" content="Get Started with Quarto - Getting Started with Quarto">
 <meta name="twitter:description" content="rstudio::conf-2022 2 day workshop on getting started with Quarto">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/rstudio-conf-2022/get-started-quarto/main/preview.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
-
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -143,8 +143,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-day-1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Day 1</a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-day-1">    
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-workshop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Workshop</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-workshop">    
         <li>
     <a class="dropdown-item" href="./materials/01-intro-quarto.html">
  <span class="dropdown-text">Intro to Quarto</span></a>
@@ -163,33 +163,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-day-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Day 2</a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-day-2">    
-        <li>
-    <a class="dropdown-item" href="./materials/05-presentations.html">
- <span class="dropdown-text">Presentations</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./materials/06-websites.html">
- <span class="dropdown-text">Websites &amp; Books</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./materials/07-plots-tables.html">
- <span class="dropdown-text">Plots &amp; Tables</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./materials/08-advanced-knitr.html">
- <span class="dropdown-text">Advanced Quarto</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./schedule.html">Schedule</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./workshop-materials.html">Workshop</a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -212,7 +185,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">rstudio::conf 2022 Workshop</h1>
+      <h1 class="quarto-secondary-nav-title">Getting Started with Quarto</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -227,7 +200,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Day 1</a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Workshop</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -255,36 +228,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Day 2</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials/05-presentations.html" class="sidebar-item-text sidebar-link">Presentations</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials/06-websites.html" class="sidebar-item-text sidebar-link">Websites &amp; Books</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials/07-plots-tables.html" class="sidebar-item-text sidebar-link">Plots &amp; Tables</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials/08-advanced-knitr.html" class="sidebar-item-text sidebar-link">Advanced Quarto</a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -294,20 +237,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#getting-started-with-quarto" id="toc-getting-started-with-quarto" class="nav-link active" data-scroll-target="#getting-started-with-quarto">Getting Started with Quarto</a></li>
-  <li><a href="#pre-work" id="toc-pre-work" class="nav-link" data-scroll-target="#pre-work">Pre-Work</a></li>
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
   <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  <li><a href="#is-this-course-for-me" id="toc-is-this-course-for-me" class="nav-link" data-scroll-target="#is-this-course-for-me">Is this course for me?</a></li>
-  <li><a href="#prework" id="toc-prework" class="nav-link" data-scroll-target="#prework">Prework</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a>
-  <ul class="collapse">
-  <li><a href="#day-1" id="toc-day-1" class="nav-link" data-scroll-target="#day-1">Day 1</a></li>
-  <li><a href="#day-2" id="toc-day-2" class="nav-link" data-scroll-target="#day-2">Day 2</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
   </ul></li>
   <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">Instructor</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -316,13 +250,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">rstudio::conf 2022 Workshop</h1>
+<h1 class="title d-none d-lg-block">Getting Started with Quarto</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Tom Mock </p>
+          </div>
+  </div>
     
     
   </div>
@@ -330,67 +270,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="getting-started-with-quarto" class="level1">
-<h1>Getting Started with Quarto</h1>
-<p>by Tom Mock</p>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Tip
+Pre Work
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you are a workshop attendee - please clone <a href="https://github.com/jthomasmock/quarto-workshop.git" class="uri">https://github.com/jthomasmock/quarto-workshop.git</a> via RStudio on Monday morning (July 25th).</p>
-</div>
-</div>
-<p>Please go to the workshop homepage for full instructions: <a href="https://rstudio-conf-2022.github.io/get-started-quarto/" class="uri">https://rstudio-conf-2022.github.io/get-started-quarto/</a></p>
-<hr>
-<p>🗓️ July 25 and 26, 2022<br>
-⏰ 09:00 - 17:00<br>
-🏨 Maryland 2<br>
-✍️ <a href="https://rstd.io/get-started-quarto">rstd.io/get-started-quarto</a></p>
-<hr>
-</section>
-<section id="pre-work" class="level1">
-<h1>Pre-Work</h1>
-<p>If you are a workshop attendee and have any trouble with installation locally, please reach out to me directly!</p>
 <ul>
-<li>Install latest version of RStudio, <a href="https://www.rstudio.com/products/rstudio/download/#download"><code>v2022.07.0-548</code> or later</a></li>
-<li>Install <a href="https://quarto.org/docs/get-started/">latest version of Quarto</a> (<code>v1.0.36</code> or greater)</li>
-<li>After installing Quarto, open the terminal in RStudio and:
+<li>Install latest version of RStudio, <a href="https://www.rstudio.com/products/rstudio/download/#download"><code>v2022.07.1</code> or later</a></li>
+</ul>
+<p>Please clone <a href="https://github.com/jthomasmock/quarto-workshop.git" class="uri">https://github.com/jthomasmock/quarto-workshop.git</a> via RStudio</p>
 <ul>
-<li>See this <a href="https://support.rstudio.com/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE">guide</a> for details on using the terminal</li>
-<li>Install/Update <code>TinyTeX</code> for PDFs with <code>quarto install tool tinytex</code></li>
-<li>Install/Update Chromium with <code>quarto install tool chromium</code></li>
-</ul></li>
-<li>Ideally upgrade/use to R 4.1 or R 4.2 (I’m showing base R pipe as <code>|&gt;</code>)</li>
 <li>Install these R packages:</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pkg_list <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>, <span class="st">"gt"</span>, <span class="st">"gtExtras"</span>, <span class="st">"reactable"</span>, <span class="st">"ggiraph"</span>, <span class="st">"here"</span>, <span class="st">"quarto"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"rmarkdown"</span>, <span class="st">"gtsummary"</span>, <span class="st">"palmerpenguins"</span>, <span class="st">"fs"</span>, <span class="st">"skimr"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(pkg_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>, <span class="st">"gt"</span>, <span class="st">"gtExtras"</span>, <span class="st">"reactable"</span>, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ggiraph"</span>,  <span class="st">"here"</span>, <span class="st">"quarto"</span>, <span class="st">"rmarkdown"</span>, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"gtsummary"</span>, <span class="st">"palmerpenguins"</span>, <span class="st">"fs"</span>, <span class="st">"skimr"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(pkg_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Workshop Materials
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>On Monday July 25th - clone this repo in RStudio! <a href="https://github.com/jthomasmock/quarto-workshop.git" class="uri">https://github.com/jthomasmock/quarto-workshop.git</a></p>
 </div>
 </div>
 <div class="callout-caution callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -399,7 +307,7 @@ How to clone a Github repo
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li><p>Navigate to <a href="https://github.com/jthomasmock/quarto-workshop" class="uri">https://github.com/jthomasmock/quarto-workshop</a></p></li>
@@ -410,179 +318,29 @@ How to clone a Github repo
 </div>
 </div>
 </div>
-<div class="callout-caution callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-(Optional!) Pre-Work for Python
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>This will be a R/RStudio centric course based on the attendees, but we will briefly cover other editors and Python. You are not required to install Jupyter/Python/VScode, but if you’d like to test them out:</p>
-<ul>
-<li>Install Python, following instructions at <a href="https://solutions.rstudio.com/python/minimum-viable-python/installing-python/">Minimum Viable Python</a></li>
-<li>Install <a href="https://quarto.org/docs/computations/python.html#installation">Jupyter</a></li>
-<li>Install VSCode, <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto VSCode extension</a>, <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python VSCode extension</a>, <a href="https://open-vsx.org/extension/ms-toolsai/jupyter">Jupyter VSCode extension</a></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="overview" class="level1">
-<h1>Overview</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This workshop is designed for those who have no or little prior experience with R Markdown and who want to learn Quarto. Quarto is the next generation of RMarkdown for publishing, including dynamic and static documents and multi-lingual programming language support. With Quarto you can create documents, books, presentations, blogs or other online resources.</p>
-<p>In this 2 day workshop you will learn about the Quarto format for technical communication and computation. We’ll teach you how to get started creating and fully customizing Quarto outputs (HTML, PDF, Presentations) and the use of RStudio’s Visual Editor which provides a user interface for editing all of Pandoc markdown.</p>
-<p>We will also provide an overview of Quarto’s developer tooling support in alternative tools such as Jupyter, VS Code, and any text editors depending on learner interest.</p>
-<p>We will briefly cover how to generate robust tables/plots in Quarto. Lastly, we will cover Quarto Projects for aggregating many files such as complex web sites or entire books.</p>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
-<ul>
-<li>Understand the difference between <code>knitr</code>, R Markdown, and Quarto</li>
-<li>Utilize RStudio, <code>knitr</code>, and Quarto to generate static documents, websites/blogs, and presentations</li>
-<li>Expand learner’s toolkit regarding markdown, CSS, and Quarto-native layout options</li>
-</ul>
-<blockquote class="blockquote">
-<p>These materials are developed for a trainer-led workshop at rstudio::conf 2022, but should be useful for self-guided learning as well.</p>
-</blockquote>
-</section>
-<section id="is-this-course-for-me" class="level2">
-<h2 class="anchored" data-anchor-id="is-this-course-for-me">Is this course for me?</h2>
-<p>This two-day workshop is primarily intended as a broad overview of Quarto as the next generation of RMarkdown. You should take this workshop if you have experience programming in R and want to learn how to take advantage of Quarto for literate data science programming in academia, science, and industry.</p>
-<p>This workshop will be appropriate for attendees who answer yes to these questions:</p>
-<ul>
-<li><p>Have you programmed in R and want to better encapsulate your code, documentation, and outputs in a cohesive “data product”?</p></li>
-<li><p>Do you want to learn about the next generation of RMarkdown for data science?</p></li>
-<li><p>Do you want to have a better interactive experience when writing technical or scientific documents with literate programming?</p></li>
-</ul>
-</section>
-<section id="prework" class="level2">
-<h2 class="anchored" data-anchor-id="prework">Prework</h2>
-<p>If you are a workshop attendee and have any trouble with installation locally, please reach out to me directly!</p>
-<ul>
-<li>Install latest version of RStudio, <a href="https://www.rstudio.com/products/rstudio/download/#download"><code>v2022.07.0-548</code> or later</a></li>
-<li>Install <a href="https://quarto.org/docs/get-started/">latest version of Quarto</a> (<code>v1.0.36</code> or greater)</li>
-<li>After installing Quarto, open the terminal in RStudio:
-<ul>
-<li>The terminal is located in the tab next to the R console pane in RStudio</li>
-<li>Install/Update <code>TinyTeX</code> for PDFs with <code>quarto install tool tinytex</code></li>
-<li>Install/Update Chromium with <code>quarto install tool chromium</code></li>
-</ul></li>
-<li>Ideally upgrade/use to R 4.1 or R 4.2 (I’m showing base R pipe as <code>|&gt;</code>)</li>
-<li>Install these R packages:</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pkg_list <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>, <span class="st">"gt"</span>, <span class="st">"gtExtras"</span>, <span class="st">"reactable"</span>, <span class="st">"ggiraph"</span>, <span class="st">"here"</span>, <span class="st">"quarto"</span>,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"rmarkdown"</span>, <span class="st">"gtsummary"</span>, <span class="st">"palmerpenguins"</span>, <span class="st">"fs"</span>, <span class="st">"skimr"</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(pkg_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Workshop Materials
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>On Monday morning July 25th - clone/pull this repo (to get latest version)! <a href="https://github.com/jthomasmock/quarto-workshop.git" class="uri">https://github.com/jthomasmock/quarto-workshop.git</a></p>
-</div>
-</div>
-</section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
-<section id="day-1" class="level3">
-<h3 class="anchored" data-anchor-id="day-1">Day 1</h3>
+<section id="schedule" class="level3">
+<h3 class="anchored" data-anchor-id="schedule">Schedule</h3>
 <table class="table">
 <thead>
 <tr class="header">
-<th style="text-align: left;">Time</th>
 <th style="text-align: left;">Activity</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">09:00 - 10:30</td>
 <td style="text-align: left;"><a href="materials/01-intro-quarto.html">Understanding magic with Quarto</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">10:30 - 11:00</td>
-<td style="text-align: left;"><em>Coffee break</em></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">11:00 - 12:30</td>
 <td style="text-align: left;"><a href="materials/02-authoring.html">Authoring with Markdown and more</a></td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">12:30 - 13:30</td>
-<td style="text-align: left;"><em>Lunch break</em></td>
-</tr>
 <tr class="odd">
-<td style="text-align: left;">13:30 - 15:00</td>
 <td style="text-align: left;"><a href="materials/03-computation-editors.html">Computation and Editors</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">15:00 - 15:30</td>
-<td style="text-align: left;"><em>Coffee break</em></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">15:30 - 17:00</td>
 <td style="text-align: left;"><a href="materials/04-static-documents.html">Static reports and documents</a></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="day-2" class="level3">
-<h3 class="anchored" data-anchor-id="day-2">Day 2</h3>
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Time</th>
-<th style="text-align: left;">Activity</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">09:00 - 10:30</td>
-<td style="text-align: left;"><a href="materials/05-presentations.html">Presentations</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">10:30 - 11:00</td>
-<td style="text-align: left;"><em>Coffee break</em></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">11:00 - 12:30</td>
-<td style="text-align: left;"><a href="materials/06-websites.html">Websites</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">12:30 - 13:30</td>
-<td style="text-align: left;"><em>Lunch break</em></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">13:30 - 15:00</td>
-<td style="text-align: left;"><a href="materials/07-plots-tables.html">Advanced plots, tables, and more</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">15:00 - 15:30</td>
-<td style="text-align: left;"><em>Coffee break</em></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">15:30 - 16:00</td>
-<td style="text-align: left;"><a href="materials/08-advanced-knitr.html">Going further with Quarto + <code>knitr</code></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">16:00 - 16:30</td>
-<td style="text-align: left;">Q/A with Quarto Dev team</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">16:30 - 17:00</td>
-<td style="text-align: left;"><a href="materials/08-advanced-knitr.html">Going further with Quarto + <code>knitr</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -595,7 +353,6 @@ Workshop Materials
 <p><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" class="img-fluid"> This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

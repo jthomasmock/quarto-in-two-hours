@@ -6,7 +6,7 @@ format:
     width: 1920
     height: 1080
     logo: "https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png"
-    footer: "[Get started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/)"
+    footer: "[Quarto in 2 Hours](https://jthomasmock.github.io/quarto-in-two-hours/)"
     css: ["theme/theme.css"]
     theme: simple
     echo: true
@@ -14,33 +14,6 @@ editor: source
 ---
 
 # 04 - Static Quarto Documents {background-image="images/write-something.jpg" background-size="cover" background-color="black" style="font-size: 90px;"}
-
-```{r}
-#| echo: false
-library(countdown)
-countdown_timer <- function(
-    minutes = 1, 
-    play_sound = TRUE, 
-    font_size = "2em", 
-    ...
-) {
-  countdown(
-    minutes = minutes,
-    # Fanfare when it's over
-    play_sound = play_sound,
-    # Set timer theme to match solarized colors
-    color_border              = "#404041",
-    color_text                = "white",
-    color_background = "#447099",
-    color_running_background  = "#72994E",
-    color_running_text        = "white",
-    color_finished_background = "#EE6331",
-    color_finished_text       = "white",
-    font_size = font_size,
-    ...
-  )
-}
-```
 
 ## HTML Workhorse
 
@@ -97,11 +70,6 @@ format:
 - Open `materials/workshop/04-static/old-rmarkdown.rmd`
 - Render via Quarto CLI
 
-```{R}
-#| echo: false
-countdown_timer(2)
-```
-
 ## Static documents
 
 - A static document is your "daily driver" - has the power for a complex table of contents, figure alignment, control of ouptut/code, and other niceties
@@ -122,16 +90,6 @@ or
 ```yaml
 toc-depth: 2
 ```
-
-. . .
-
-<iframe src = "https://rstudio-conf-2022.github.io/get-started-quarto/materials/static/toc-1.html" height="500" width="1200" ></iframe>
-
-
-## Table of Contents and Section
-
-<iframe src="https://rstudio-conf-2022.github.io/get-started-quarto/#getting-started-with-quarto" width="1300px" height="900px"></iframe>
-
 
 ## Tabsets
 
@@ -195,53 +153,6 @@ head(mtcars)
 
 :::
 ````
-
-## Footnotes
-
-You can create inline footnotes like so: `some inline text with a^[footnote]`
-
-. . .
-
-Pandoc also supports numbering and formatting footnotes using the following syntax:
-
-<iframe src="https://rstudio-conf-2022.github.io/get-started-quarto/materials/static/fancy-footnotes.html" height="800" width="1200"></iframe>
-
-## Cross-references
-
-`![Howard is glamorous](images/howard-glamour.jpg){#fig-glamour}`
-
-> The presence of the caption (Howard is glamouros) and label (#fig-howard) make this figure referenceable. This enables you to use the following syntax to refer to it elsewhere in the document
-
-. . .
-
-![Howard is glamorous](images/howard-glamour.jpg){#fig-glamour fig-align="left"}
-
-. . .
-
-@fig-glamour is a great glamour shot of Howard
-
-## Reference popups
-
-If you hover your mouse over the citation and footnote in this sentence you’ll see a popup displaying the reference contents:
-
-```
-format:
-  html:
-    citations-hover: true
-    footnotes-hover: true
-```
-
-. . .
-
-<br>
-
-```
-For example, did you know that Howard is a dog^[Specifically he is a Boston Terrier, although sometimes he acts like a cat]?
-```
-
-. . .
-
-<iframe src="static/footnote.html" height="600" width = "1000"></iframe>
 
 # Code {background-color="#4f6952"}
 
@@ -329,48 +240,6 @@ format:
 - Change the code to all fold, render
 - Change the code to source and toggle
 
-```{R}
-#| echo: false
-countdown_timer(4)
-```
-
-# Code appearance {background-color="#4f6952"}
-
-## Code highlighting
-
-[Full highlighting options](https://quarto.org/docs/output-formats/html-code.html#highlighting)
-
-```{r}
-#| message: false
-library(dplyr)
-mtcars |> 
-  group_by(cyl, am) |> 
-  summarize(mean = mean(mpg), n = n(), .groups = "drop")
-```
-
-## Code highlighting
-
-```yaml
-format: 
-  html:
-    highlight-style: dracula
-    code-block-border-left: "#4f6952"
-```
-
-![](images/dracula.png)
-
-## Code highlighting
-
-```yaml
-format: 
-  html:
-    highlight-style: github
-    code-block-border-left: "#4f6952"
-    code-block-bg: true
-```
-
-![](images/github.png)
-
 ## Code linking with [`downlit`](https://downlit.r-lib.org/)
 
 > The goal of `downlit` is to provide syntax highlighting and automatic linking of R code
@@ -443,11 +312,6 @@ format:
 - 25 bootswatch themes
 - https://quarto.org/docs/output-formats/html-themes.html
 - https://quarto.org/docs/output-formats/html-themes-more.html
-
-```{R}
-#| echo: false
-countdown_timer(2)
-```
 
 ## CSS
 
@@ -535,72 +399,6 @@ Here is some [big text]{.big-text} and some small text.
 
 Here is some [big text]{.big-text} and some small text.
 
-## CSS Id
-
-```{css}
-#blue {
-  background-color: #3c6f9a;
-  color: #fa551b;
-}
-```
-
-. . .
-
-```markdown
-::: {#blue}
-Some content
-:::
-```
-
-::: {#blue}
-Some content
-:::
-
-. . .
-
-```markdown
-Some [text]{#blue}
-```
-
-Some [text]{#blue}
-
-## SCSS/SASS
-
-> SASS (Syntactically Awesome Style Sheets) is a pre-processor scripting language that will be compiled or interpreted into CSS. SassScript is itself a scripting language whereas SCSS is the main syntax for the SASS which builds on top of the existing CSS syntax
-
-. . .
-
-Sass reduces repetition of CSS and therefore saves time - think of it like manually changing code vs using functions in R.
-
-. . .
-
-Color palette: [`#404042`]{style="background-color: #404042;"} [`#3c6f9a`]{style="background-color: #3c6f9a;"} [`#fa551b`]{style="background-color: #fa551b;"}
-
-. . .
-
-```css
-$primary_1: #a2b9bc;
-$primary_2: #b2ad7f;
-$primary_3: #878f99;
-
-/* use the variables */
-.main-header {
-  background-color: $primary_1;
-}
-
-.menu-left {
-  background-color: $primary_2;
-}
-
-.menu-right {
-  background-color: $primary_3;
-}
-```
-
-## SASS variables + Quarto
-
-<iframe src="https://quarto.org/docs/output-formats/html-themes.html#sass-variables" height="800" width="1200" ></iframe>
-
 ## `format: PDF`
 
 TIP!
@@ -612,8 +410,3 @@ TIP!
 
 - Open `materials/workshop/01-intro/history.qmd`
 - Render as HTML and then render as PDF
-
-```{R}
-#| echo: false
-countdown_timer(3)
-```

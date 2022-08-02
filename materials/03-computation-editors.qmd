@@ -6,7 +6,7 @@ format:
     width: 1920
     height: 1080
     logo: "https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png"
-    footer: "[Get started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/)"
+    footer: "[Quarto in 2 Hours](https://jthomasmock.github.io/quarto-in-two-hours/)"
     css: ["theme/theme.css"]
     theme: simple
     echo: true
@@ -16,33 +16,6 @@ editor: source
 # {background-color="black" background-image="images/calculations.jpeg"}
 
 [03 - Code and Editors]{style="color: white; font-size: 250px;"}
-
-```{r}
-#| echo: false
-library(countdown)
-countdown_timer <- function(
-    minutes = 1, 
-    play_sound = TRUE, 
-    font_size = "2em", 
-    ...
-) {
-  countdown(
-    minutes = minutes,
-    # Fanfare when it's over
-    play_sound = play_sound,
-    # Set timer theme to match solarized colors
-    color_border              = "#404041",
-    color_text                = "white",
-    color_background = "#447099",
-    color_running_background  = "#72994E",
-    color_running_text        = "white",
-    color_finished_background = "#EE6331",
-    color_finished_text       = "white",
-    font_size = font_size,
-    ...
-  )
-}
-```
 
 # {background-color="#6a9c42"}
 
@@ -73,51 +46,6 @@ Quarto can _also_ use the Jupyter engine to natively execute Julia, Python, or o
 
 :::
 
-## Choose your engine
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-You can specify Jupyter to use defaults
-
-```yaml
----
-engine: jupyter
----
-```
-
-<br>
-
-Or a specific Python version
-
-```yaml
----
-engine: python3
----
-```
-
-<br>
-
-Or even a specific Jupyter Kernel!
-
-```yaml
----
-jupyter: 
-  kernelspec:
-    name: "venvPython"
-    language: "python"
-    display_name: "Python 3.7 (venv Python)"
----
-```
-
-:::
-
-::: {.column width="50%"}
-
-:::
-
-::::
 
 ## Choose your engine
 
@@ -295,11 +223,6 @@ Or use the Command Palette: <kbd>`Cmd + Shift + P`</kbd>/<kbd>`Ctrl + Shift + P`
   - Chunk 2: Create a summary by sex/species of the average and median body weight and bill length
   - Chunk 3: Create a plot of body mass (x) by bill length (y)
   - Render it!
-  
-```{R}
-#| echo: false
-countdown_timer(2)
-```
 
 ## Inline code
 
@@ -380,11 +303,6 @@ The radius of the circle is $radius.
 - Look through the source code, and then render it
 - Check out the appearance and building up of inline code -> inline output
 - Try to add your own new calculations for inline reporting
-
-```{R}
-#| echo: false
-countdown_timer(4)
-```
 
 ## Code chunks options
 
@@ -583,12 +501,6 @@ List of 2
 - Try to render it, see the errors
 - Fix the errors by finding their named chunks and then render again!
 
-```{R}
-#| echo: false
-countdown_timer(3)
-```
-
-
 ## Chunk names, good and bad
 
 :::: {.columns}
@@ -611,48 +523,6 @@ countdown_timer(3)
 
 - `my_chunk`
 - `my chunk`
-
-:::
-
-::::
-
-## Named chunks can be re-used!
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-````md
-```{{r}}
-#| label: myPlt
-#| eval: false
-ggplot(mtcars, aes(x = disp, y = mpg, 
-    color = factor(cyl))) +
-  geom_point()
-```
-````
-
-Note that you when using **named chunks** you can't alter the internal code, only the chunk options. This is necessary because you are referencing the initially defined code in that chunk.
-
-:::
-
-::: {.column width="50%"}
-
-
-````md
-```{{r}}
-#| label: myPlt
-#| eval: true
-#| dpi: 300
-#| fig-height: 6
-#| fig-width: 4
-```
-````
-
-```{r coolPlot, echo = FALSE, dpi=300, fig.dim = c(6,4)}
-ggplot(mtcars, aes(x = disp, y = mpg, color = factor(cyl))) +
-  geom_point()
-```
 
 :::
 
@@ -733,7 +603,7 @@ RStudio has deep integration with R, `knitr` and Quarto
 
 You should _always_ be using a recent release of the RStudio IDE - especially for the Quarto features. 
 
-RStudio `2022.07` and beyond comes bundled with a production-stable release of Quarto, no additional install needed!
+RStudio `2022.07.1` and beyond comes bundled with a production-stable release of Quarto, no additional install needed!
 
 ## YAML Auto-completion
 
@@ -764,16 +634,6 @@ You can use tab-completion inside `knitr` chunk options for RMarkdown style or Q
 
 ![](images/knitr-autocomplete.gif)
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
-
-- Open `auto-complete.qmd`
-- Follow instructions in the document
-
-```{R}
-#| echo: false
-countdown_timer(2)
-```
-
 ## RStudio Visual Editor
 
 ![](https://quarto.org/docs/visual-editor/images/visual-editing.png)
@@ -784,11 +644,6 @@ countdown_timer(2)
 - Explore the UI elements and visual editor mode
 - Turn Visual Editor mode on/off and explore the sections
 - Render the document and compare the viewer to Visual Mode!
-
-```{R}
-#| echo: false
-countdown_timer(4)
-```
 
 ## VS Code
 
@@ -817,37 +672,3 @@ countdown_timer(4)
 Treat YAML as a "raw cell" in Jupyter - Jupyter doesn't care about YAML, but it's needed/used by Quarto
 
 ![](https://quarto.org/docs/tools/images/jupyter-lab-yaml.png)
-
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
-
-```{py}
-#| eval: false
-#| echo: true
-#| code-line-numbers: "|1|4|10|14|15"
-thomasmock$ quarto --help
-
-  Usage:   quarto
-  Version: 1.0.36
-
-  Description:
-    Quarto CLI
-
-  Options:
-    -h, --help     - Show this help.                            
-    -V, --version  - Show the version number for this program.  
-
-  Commands:
-    render          [input] [args...]   - Render input file(s) to various document types.            
-    preview         [file] [args...]    - Render and preview a document or website project.          
-    serve           [input]             - Serve a Shiny interactive document.                        
-    create-project  [dir]               - Create a project for rendering multiple documents          
-    convert         <input>             - Convert documents to alternate representations.            
-    pandoc          [args...]           - Run the version of Pandoc embedded within Quarto.          
-    run             [script] [args...]  - Run a TypeScript, R, Python, or Lua script.                
-    install         <type> [target]     - Installs an extension or global dependency.                
-    publish         [provider] [path]   - Publish a document or project. Available providers include:
-    check           [target]            - Verify correct functioning of Quarto installation.         
-    help            [command]           - Show this help or the help of a sub-command.    
-```
-
-
