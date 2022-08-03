@@ -118,7 +118,7 @@ RStudio \> New Project \> New Quarto Blog
 -   Create a new folder under `/posts` - this folder will be the "slug" URL (like `themockup.blog/2022-07-25-new-post/`)
 -   Create a new `index.qmd` within the new folder
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 -   Create a new RStudio project (in a separate RStudio session) and select Quarto blog
 -   Give it a name
@@ -139,7 +139,7 @@ These will preview the entire website
 
 When you render the website, it will re-execute code in older posts. Not ideal in many situations!
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 -   Let's render the `index.qmd` together!
 -   Now, let's try Build \> Render Website
@@ -181,7 +181,7 @@ execute:
 
 I typically use cache throughout various types of outputs when I have computationally expensive chunks. Think a `tidymodels` workshop website that is demo'ing with grid-tuning.
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 -   Add a `_metadata.yml` to the `/posts/` directory
 
@@ -228,7 +228,7 @@ format:
 
 :::
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 -   Open `_quarto.yml` and change the theme to one of the support Bootswatch themes
 -   Create a new folder in `/posts/` - title it `2022-07-26-my-first-post`
@@ -285,7 +285,7 @@ about:
 ![](https://quarto.org/docs/websites/images/about-broadside.png)
 :::
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 -   Open your about page (`about.qmd`)
 -   Change some of the details, add more details and choose a specific template (jolla, trestles, solana, marquee, broadside)
@@ -352,7 +352,7 @@ Example: <https://www.ericekholm.com/posts/demo-quarto-site/>
 <img src="https://quarto.org/docs/websites/images/listing-table.png" height="400px"/>
 :::
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 -   Open your existing Quarto blog from before
 -   Let's change the listing type of our blog - change from default to `grid`
@@ -533,8 +533,6 @@ listing:
 
 ## GitHub Pages
 
-`{=html, echo=FALSE} <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`
-
 -   Name your content `index.qmd` to generate `index.html` -\> Push to GitHub
 
 <blockquote class="twitter-tweet">
@@ -549,7 +547,7 @@ Step 2: Name your slides index.qmd <a href="https://t.co/wLXN43rUlZ">pic.twitter
 
 </blockquote>
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 In your blog project:
 
@@ -564,9 +562,31 @@ quarto publish quarto-pub
 
 Similar to blog, but less of a focus on listing/posts and more focus on individual pages and overall navigation.
 
-<iframe src="https://github.com/rstudio-conf-2022/get-started-quarto/blob/main/_quarto.yml#L8-L38" height="900px" width="1200px">
-
-</iframe>
+```code
+website:
+  title: "Get Started with Quarto"
+  twitter-card:
+    card-style: summary_large_image
+    description: "rstudio::conf-2022 2 day workshop on getting started with Quarto"
+    image: "https://raw.githubusercontent.com/rstudio-conf-2022/get-started-quarto/main/preview.jpeg"
+  page-footer:
+    left: "This page was built with ❤️ and [Quarto](https://quarto.org/) by [Tom Mock](https://themockup.blog)."
+  navbar:
+    background: "#447099"
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Day 1
+        menu: 
+          - href: materials/01-intro-quarto.qmd
+            text: "Intro to Quarto"
+          - href: materials/02-authoring.qmd
+            text: "Authoring Quarto"
+          - href: materials/03-computation-editors.qmd
+            text: "Code and Editors"
+          - href: materials/04-static-documents.qmd
+            text: "Static Documents" 
+```
 
 ## Quarto Project
 

@@ -1145,14 +1145,14 @@
     "href": "materials/05-websites.html#github-pages",
     "title": "Get Started with Quarto",
     "section": "GitHub Pages",
-    "text": "GitHub Pages\n{=html, echo=FALSE} <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n\nName your content index.qmd to generate index.html -> Push to GitHub\n\n\n\nStep 2: Name your slides index.qmd pic.twitter.com/wLXN43rUlZ\n\n— Emil Hvitfeldt (@Emil_Hvitfeldt) July 21, 2022"
+    "text": "GitHub Pages\n\nName your content index.qmd to generate index.html -> Push to GitHub\n\n\n\nStep 2: Name your slides index.qmd pic.twitter.com/wLXN43rUlZ\n\n— Emil Hvitfeldt (@Emil_Hvitfeldt) July 21, 2022"
   },
   {
     "objectID": "materials/05-websites.html#websites-2",
     "href": "materials/05-websites.html#websites-2",
     "title": "Get Started with Quarto",
     "section": "Websites",
-    "text": "Websites\nSimilar to blog, but less of a focus on listing/posts and more focus on individual pages and overall navigation."
+    "text": "Websites\nSimilar to blog, but less of a focus on listing/posts and more focus on individual pages and overall navigation.\nwebsite:\n  title: \"Get Started with Quarto\"\n  twitter-card:\n    card-style: summary_large_image\n    description: \"rstudio::conf-2022 2 day workshop on getting started with Quarto\"\n    image: \"https://raw.githubusercontent.com/rstudio-conf-2022/get-started-quarto/main/preview.jpeg\"\n  page-footer:\n    left: \"This page was built with ❤️ and [Quarto](https://quarto.org/) by [Tom Mock](https://themockup.blog).\"\n  navbar:\n    background: \"#447099\"\n    left:\n      - href: index.qmd\n        text: Home\n      - text: Day 1\n        menu: \n          - href: materials/01-intro-quarto.qmd\n            text: \"Intro to Quarto\"\n          - href: materials/02-authoring.qmd\n            text: \"Authoring Quarto\"\n          - href: materials/03-computation-editors.qmd\n            text: \"Code and Editors\"\n          - href: materials/04-static-documents.qmd\n            text: \"Static Documents\""
   },
   {
     "objectID": "materials/05-websites.html#quarto-project",
@@ -1279,5 +1279,19 @@
     "title": "Get Started with Quarto",
     "section": "",
     "text": "Excited\n\n\n\n\n\n\n\nSleeping\n\n\n\n\n\n\n\n\n\nStill Excited\n\n\n\n\n\n\n\nStill sleeping\n\n\n\n\n\n\nTwo states of Howard, twice"
+  },
+  {
+    "objectID": "materials/01-intro-quarto.html#section-2",
+    "href": "materials/01-intro-quarto.html#section-2",
+    "title": "Get Started with Quarto",
+    "section": "",
+    "text": "Find me at:\n @thomas_mock\n @jthomasmock\n themockup.blog\n thomas@rstudio.com"
+  },
+  {
+    "objectID": "materials/01-intro-quarto.html#section-5",
+    "href": "materials/01-intro-quarto.html#section-5",
+    "title": "Get Started with Quarto",
+    "section": "",
+    "text": "So what is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc"
   }
 ]

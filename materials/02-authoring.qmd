@@ -268,7 +268,7 @@ RStudio + VSCode provide rich tab-completion - start a word and tab to complete,
 
 ![](images/quarto-tab-complete.png)
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 -   Open a new Quarto document in RStudio
 -   Try <kbd>`Ctrl + space`</kbd> to see the available YAML options
@@ -563,7 +563,7 @@ Here is something under construction
     This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
     :::
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 -   Open `materials/workshop/02-authoring/callout-boxes.qmd`
 -   Try changing the types of callouts/remove them from code boxes and then render

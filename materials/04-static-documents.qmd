@@ -65,7 +65,7 @@ format:
 > One source of the difference in syntax is that Quarto is more closely aligned with Pandoc format names and options (thus the use of - as a word separator rather than _).
 
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 - Open `materials/workshop/04-static/old-rmarkdown.rmd`
 - Render via Quarto CLI
@@ -233,7 +233,7 @@ format:
       source: https://github.com/quarto-dev/quarto-web/blob/main/index.md
 ```
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 - Open `materials/workshop/04-static/penguin-report.qmd`
 - Explore the document as a concept of literate programming or a "lab notebook"
@@ -306,7 +306,7 @@ format:
 
 <iframe src="https://bootswatch.com/sketchy/" height="900" width="1200"></iframe>
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 - Open `materials/workshop/04-static/bootswatch-themed.qmd` and try out some themes!
 - 25 bootswatch themes
@@ -406,7 +406,7 @@ TIP!
 - CSS is _not_ transferable
 - Lean on Quarto/Pandoc tooling and then reach for raw CSS/LaTeX
 
-# `r fontawesome::fa("laptop-code", "white")` Your Turn {background-color="#447099" transition="slide-in"}
+# `r fontawesome::fa("laptop-code", "white")` Our turn {background-color="#447099" transition="slide-in"}
 
 - Open `materials/workshop/01-intro/history.qmd`
 - Render as HTML and then render as PDF

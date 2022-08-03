@@ -32,8 +32,6 @@ library(gtsummary)
 
 <br>
 
-## 
-
 #  {background-color="#447099"}
 
 [Hello Quarto]{.r-fit-text}
@@ -627,12 +625,6 @@ plt.show()
 <br>
 
 -   Move to the integrated terminal and execute:
-
-``` bash
-quarto render --help
-```
-
--   
 
 -   Render via terminal with `quarto render history.qmd --to pdf`
 
