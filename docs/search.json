@@ -11,7 +11,7 @@
     "href": "index.html#overview",
     "title": "Getting Started with Quarto",
     "section": "Overview",
-    "text": "Overview\nThis workshop is designed for those who have no or little prior experience with R Markdown and who want to learn Quarto. Quarto is the next generation of RMarkdown for publishing, including dynamic and static documents and multi-lingual programming language support. With Quarto you can create documents, books, presentations, blogs or other online resources.\n\nSchedule\n\n\n\nActivity\n\n\n\n\nUnderstanding magic with Quarto\n\n\nAuthoring with Markdown and more\n\n\nComputation and Editors\n\n\nStatic reports and documents"
+    "text": "Overview\nThis workshop is designed for those who have no or little prior experience with R Markdown and who want to learn Quarto. Quarto is the next generation of RMarkdown for publishing, including dynamic and static documents and multi-lingual programming language support. With Quarto you can create documents, books, presentations, blogs or other online resources.\n\nSchedule\n\n\n\nActivity\n\n\n\n\nUnderstanding magic with Quarto\n\n\nAuthoring with Markdown and more\n\n\nComputation and Editors\n\n\nStatic reports and documents\n\n\nBlogs & Websites"
   },
   {
     "objectID": "index.html#instructor",

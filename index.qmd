@@ -59,6 +59,7 @@ online resources.
 | [Authoring with Markdown and more](materials/02-authoring.html)  |
 | [Computation and Editors](materials/03-computation-editors.html)  |
 | [Static reports and documents](materials/04-static-documents.html)    |
+| [Blogs & Websites](materials/05-websites.html)    |
 
 ## Instructor
 
