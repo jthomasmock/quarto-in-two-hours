@@ -2,8 +2,8 @@
 format: 
   revealjs:
     slide-number: true
-    width: 1920
-    height: 1080
+    width: 1600
+    height: 900
     logo: "https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png"
     footer: "[Quarto in 2 Hours](https://jthomasmock.github.io/quarto-in-two-hours/)"
     css: ["theme/theme.css"]
@@ -26,7 +26,7 @@ library(gtsummary)
 
 <h1>with Quarto</h1>
 
-<h3>Tom Mock, RStudio PBC</h3>
+<h3>Tom Mock</h3>
 
 <h3>2022-08-02</h3>
 

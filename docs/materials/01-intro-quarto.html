@@ -392,7 +392,7 @@
 with Quarto
 </h1>
 <h3>
-Tom Mock, RStudio PBC
+Tom Mock
 </h3>
 <h3>
 2022-08-02
@@ -1092,11 +1092,7 @@ We’ll teach you
 </ul>
 <p><br></p>
 <ul>
-<li>Move to the integrated terminal and execute:</li>
-</ul>
-<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1"></a><span class="ex">quarto</span> render <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li></li>
+<li><p>Move to the integrated terminal and execute:</p></li>
 <li><p>Render via terminal with <code>quarto render history.qmd --to pdf</code></p></li>
 <li><p>Compare to the HTML version</p></li>
 </ul>
@@ -1104,30 +1100,30 @@ We’ll teach you
 <section id="cli-overview" class="slide level2">
 <h2>CLI Overview</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27" data-code-line-numbers="|1|4|10|14|15"><pre class="sourceCode numberSource py number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1"></a>thomasmock$ quarto <span class="op">--</span><span class="bu">help</span></span>
-<span id="cb27-2"><a href="#cb27-2"></a></span>
-<span id="cb27-3"><a href="#cb27-3"></a>  Usage:   quarto</span>
-<span id="cb27-4"><a href="#cb27-4"></a>  Version: <span class="fl">1.0.36</span></span>
-<span id="cb27-5"><a href="#cb27-5"></a></span>
-<span id="cb27-6"><a href="#cb27-6"></a>  Description:</span>
-<span id="cb27-7"><a href="#cb27-7"></a>    Quarto CLI</span>
-<span id="cb27-8"><a href="#cb27-8"></a></span>
-<span id="cb27-9"><a href="#cb27-9"></a>  Options:</span>
-<span id="cb27-10"><a href="#cb27-10"></a>    <span class="op">-</span>h, <span class="op">--</span><span class="bu">help</span>     <span class="op">-</span> Show this <span class="bu">help</span>.                            </span>
-<span id="cb27-11"><a href="#cb27-11"></a>    <span class="op">-</span>V, <span class="op">--</span>version  <span class="op">-</span> Show the version number <span class="cf">for</span> this program.  </span>
-<span id="cb27-12"><a href="#cb27-12"></a></span>
-<span id="cb27-13"><a href="#cb27-13"></a>  Commands:</span>
-<span id="cb27-14"><a href="#cb27-14"></a>    render          [<span class="bu">input</span>] [args...]   <span class="op">-</span> Render <span class="bu">input</span> <span class="bu">file</span>(s) to various document types.            </span>
-<span id="cb27-15"><a href="#cb27-15"></a>    preview         [<span class="bu">file</span>] [args...]    <span class="op">-</span> Render <span class="kw">and</span> preview a document <span class="kw">or</span> website project.          </span>
-<span id="cb27-16"><a href="#cb27-16"></a>    serve           [<span class="bu">input</span>]             <span class="op">-</span> Serve a Shiny interactive document.                        </span>
-<span id="cb27-17"><a href="#cb27-17"></a>    create<span class="op">-</span>project  [<span class="bu">dir</span>]               <span class="op">-</span> Create a project <span class="cf">for</span> rendering multiple documents          </span>
-<span id="cb27-18"><a href="#cb27-18"></a>    convert         <span class="op">&lt;</span><span class="bu">input</span><span class="op">&gt;</span>             <span class="op">-</span> Convert documents to alternate representations.            </span>
-<span id="cb27-19"><a href="#cb27-19"></a>    pandoc          [args...]           <span class="op">-</span> Run the version of Pandoc embedded within Quarto.          </span>
-<span id="cb27-20"><a href="#cb27-20"></a>    run             [script] [args...]  <span class="op">-</span> Run a TypeScript, R, Python, <span class="kw">or</span> Lua script.                </span>
-<span id="cb27-21"><a href="#cb27-21"></a>    install         <span class="op">&lt;</span><span class="bu">type</span><span class="op">&gt;</span> [target]     <span class="op">-</span> Installs an extension <span class="kw">or</span> <span class="kw">global</span> dependency.                </span>
-<span id="cb27-22"><a href="#cb27-22"></a>    publish         [provider] [path]   <span class="op">-</span> Publish a document <span class="kw">or</span> project. Available providers include:</span>
-<span id="cb27-23"><a href="#cb27-23"></a>    check           [target]            <span class="op">-</span> Verify correct functioning of Quarto installation.         </span>
-<span id="cb27-24"><a href="#cb27-24"></a>    <span class="bu">help</span>            [command]           <span class="op">-</span> Show this <span class="bu">help</span> <span class="kw">or</span> the <span class="bu">help</span> of a sub<span class="op">-</span>command.    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26" data-code-line-numbers="|1|4|10|14|15"><pre class="sourceCode numberSource py number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1"></a>thomasmock$ quarto <span class="op">--</span><span class="bu">help</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a></span>
+<span id="cb26-3"><a href="#cb26-3"></a>  Usage:   quarto</span>
+<span id="cb26-4"><a href="#cb26-4"></a>  Version: <span class="fl">1.0.36</span></span>
+<span id="cb26-5"><a href="#cb26-5"></a></span>
+<span id="cb26-6"><a href="#cb26-6"></a>  Description:</span>
+<span id="cb26-7"><a href="#cb26-7"></a>    Quarto CLI</span>
+<span id="cb26-8"><a href="#cb26-8"></a></span>
+<span id="cb26-9"><a href="#cb26-9"></a>  Options:</span>
+<span id="cb26-10"><a href="#cb26-10"></a>    <span class="op">-</span>h, <span class="op">--</span><span class="bu">help</span>     <span class="op">-</span> Show this <span class="bu">help</span>.                            </span>
+<span id="cb26-11"><a href="#cb26-11"></a>    <span class="op">-</span>V, <span class="op">--</span>version  <span class="op">-</span> Show the version number <span class="cf">for</span> this program.  </span>
+<span id="cb26-12"><a href="#cb26-12"></a></span>
+<span id="cb26-13"><a href="#cb26-13"></a>  Commands:</span>
+<span id="cb26-14"><a href="#cb26-14"></a>    render          [<span class="bu">input</span>] [args...]   <span class="op">-</span> Render <span class="bu">input</span> <span class="bu">file</span>(s) to various document types.            </span>
+<span id="cb26-15"><a href="#cb26-15"></a>    preview         [<span class="bu">file</span>] [args...]    <span class="op">-</span> Render <span class="kw">and</span> preview a document <span class="kw">or</span> website project.          </span>
+<span id="cb26-16"><a href="#cb26-16"></a>    serve           [<span class="bu">input</span>]             <span class="op">-</span> Serve a Shiny interactive document.                        </span>
+<span id="cb26-17"><a href="#cb26-17"></a>    create<span class="op">-</span>project  [<span class="bu">dir</span>]               <span class="op">-</span> Create a project <span class="cf">for</span> rendering multiple documents          </span>
+<span id="cb26-18"><a href="#cb26-18"></a>    convert         <span class="op">&lt;</span><span class="bu">input</span><span class="op">&gt;</span>             <span class="op">-</span> Convert documents to alternate representations.            </span>
+<span id="cb26-19"><a href="#cb26-19"></a>    pandoc          [args...]           <span class="op">-</span> Run the version of Pandoc embedded within Quarto.          </span>
+<span id="cb26-20"><a href="#cb26-20"></a>    run             [script] [args...]  <span class="op">-</span> Run a TypeScript, R, Python, <span class="kw">or</span> Lua script.                </span>
+<span id="cb26-21"><a href="#cb26-21"></a>    install         <span class="op">&lt;</span><span class="bu">type</span><span class="op">&gt;</span> [target]     <span class="op">-</span> Installs an extension <span class="kw">or</span> <span class="kw">global</span> dependency.                </span>
+<span id="cb26-22"><a href="#cb26-22"></a>    publish         [provider] [path]   <span class="op">-</span> Publish a document <span class="kw">or</span> project. Available providers include:</span>
+<span id="cb26-23"><a href="#cb26-23"></a>    check           [target]            <span class="op">-</span> Verify correct functioning of Quarto installation.         </span>
+<span id="cb26-24"><a href="#cb26-24"></a>    <span class="bu">help</span>            [command]           <span class="op">-</span> Show this <span class="bu">help</span> <span class="kw">or</span> the <span class="bu">help</span> of a sub<span class="op">-</span>command.    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
@@ -1313,9 +1309,9 @@ We’ll teach you
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1920,
+        width: 1600,
 
-        height: 1080,
+        height: 900,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,

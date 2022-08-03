@@ -25,7 +25,7 @@
     "href": "materials/01-intro-quarto.html#section",
     "title": "Get Started with Quarto",
     "section": "",
-    "text": "01 - Performing magic\n\n\nwith Quarto\n\n\nTom Mock, RStudio PBC\n\n\n2022-08-02"
+    "text": "01 - Performing magic\n\n\nwith Quarto\n\n\nTom Mock\n\n\n2022-08-02"
   },
   {
     "objectID": "materials/01-intro-quarto.html#we-assume",
@@ -35,8 +35,8 @@
     "text": "We assume\n You know R\n You know a little bit of Markdown\n You want to learn about Quarto, the next-generation of RMarkdown\n\n\nWe’ll teach you\n\nQuarto syntax and formats\nMore Markdown\nEven more R along the way!"
   },
   {
-    "objectID": "materials/01-intro-quarto.html#section-3",
-    "href": "materials/01-intro-quarto.html#section-3",
+    "objectID": "materials/01-intro-quarto.html#section-2",
+    "href": "materials/01-intro-quarto.html#section-2",
     "title": "Get Started with Quarto",
     "section": "",
     "text": "Find me at:\n @thomas_mock\n @jthomasmock\n themockup.blog\n thomas@rstudio.com"
@@ -126,8 +126,8 @@
     "text": "Quarto, more internals\n\nknitr or jupyter evaluates R/Python/Julia code and returns a .md file along with the evaluated code\n\n\n\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format\n\n\n\nHere is an example of a Lua filter that converts strong emphasis to small caps, from https://pandoc.org/lua-filters.html\nreturn {\n  {\n    Strong = function (elem)\n      return pandoc.SmallCaps(elem.c)\n    end,\n  }\n}\n\n\nLua filters written by R/Python/Julia developers should be interchangeable between formats - not language specific and often not even format specific!"
   },
   {
-    "objectID": "materials/01-intro-quarto.html#section-6",
-    "href": "materials/01-intro-quarto.html#section-6",
+    "objectID": "materials/01-intro-quarto.html#section-5",
+    "href": "materials/01-intro-quarto.html#section-5",
     "title": "Get Started with Quarto",
     "section": "",
     "text": "So what is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc"
@@ -1279,19 +1279,5 @@
     "title": "Get Started with Quarto",
     "section": "",
     "text": "Excited\n\n\n\n\n\n\n\nSleeping\n\n\n\n\n\n\n\n\n\nStill Excited\n\n\n\n\n\n\n\nStill sleeping\n\n\n\n\n\n\nTwo states of Howard, twice"
-  },
-  {
-    "objectID": "materials/01-intro-quarto.html#section-2",
-    "href": "materials/01-intro-quarto.html#section-2",
-    "title": "Get Started with Quarto",
-    "section": "",
-    "text": "Find me at:\n @thomas_mock\n @jthomasmock\n themockup.blog\n thomas@rstudio.com"
-  },
-  {
-    "objectID": "materials/01-intro-quarto.html#section-5",
-    "href": "materials/01-intro-quarto.html#section-5",
-    "title": "Get Started with Quarto",
-    "section": "",
-    "text": "So what is Quarto?\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc"
   }
 ]
