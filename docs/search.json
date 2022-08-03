@@ -46,7 +46,7 @@
     "href": "materials/01-intro-quarto.html#workshop-prep",
     "title": "Get Started with Quarto",
     "section": "Workshop Prep",
-    "text": "Workshop Prep\n\nShort-code to content:\nAre you on the latest version of RStudio i.e. v2022.07.1 or later?\n\npkg_list <- c(\n  \"tidyverse\", \"gt\", \"gtExtras\", \"reactable\", \"ggiraph\", \"here\", \"quarto\",\n  \"rmarkdown\", \"gtsummary\", \"palmerpenguins\", \"fs\", \"skimr\"\n  )\ninstall.packages(pkg_list)\n\nGreat, let’s get started!"
+    "text": "Workshop Prep\n\nContent Website: https://jthomasmock.github.io/quarto-in-two-hours/\nAre you on the latest version of RStudio i.e. v2022.07.1 or later?\n\npkg_list <- c(\n  \"tidyverse\", \"gt\", \"gtExtras\", \"reactable\", \"ggiraph\", \"here\", \"quarto\",\n  \"rmarkdown\", \"gtsummary\", \"palmerpenguins\", \"fs\", \"skimr\"\n  )\ninstall.packages(pkg_list)\n\nGreat, let’s get started!"
   },
   {
     "objectID": "materials/01-intro-quarto.html#hello-quarto",
@@ -123,7 +123,7 @@
     "href": "materials/01-intro-quarto.html#quarto-more-internals",
     "title": "Get Started with Quarto",
     "section": "Quarto, more internals",
-    "text": "Quarto, more internals\n\nknitr or jupyter evaluates R/Python/Julia code and returns a .md file along with the evaluated code\n\n\n\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final ouput format\n\n\n\nHere is an example of a Lua filter that converts strong emphasis to small caps, from https://pandoc.org/lua-filters.html\nreturn {\n  {\n    Strong = function (elem)\n      return pandoc.SmallCaps(elem.c)\n    end,\n  }\n}\n\n\nLua filters written by R/Python/Julia developers should be interchangeable between formats - not language specific!"
+    "text": "Quarto, more internals\n\nknitr or jupyter evaluates R/Python/Julia code and returns a .md file along with the evaluated code\n\n\n\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format\n\n\n\nHere is an example of a Lua filter that converts strong emphasis to small caps, from https://pandoc.org/lua-filters.html\nreturn {\n  {\n    Strong = function (elem)\n      return pandoc.SmallCaps(elem.c)\n    end,\n  }\n}\n\n\nLua filters written by R/Python/Julia developers should be interchangeable between formats - not language specific and often not even format specific!"
   },
   {
     "objectID": "materials/01-intro-quarto.html#section-6",
@@ -165,28 +165,7 @@
     "href": "materials/01-intro-quarto.html#what-to-do-with-my-existing-.rmd-or-.ipynb",
     "title": "Get Started with Quarto",
     "section": "What to do with my existing .Rmd or .ipynb?",
-    "text": "What to do with my existing .Rmd or .ipynb?\nFor some of you - nothing changes! Keep using RMarkdown and Jupyter.\n\n\nHowever, most existing .rmd or .ipynb can be rendered as-is via Quarto\nquarto render my-favorite.rmd --to html\n\n\n\nSince Jupyter notebooks can either be treated as a linear document to be re-executed or an already evaluated document there are additional options like: --execute\nquarto render my-favorite.ipynb --to html --execute\n\n\nQuarto comes out of the box with much better accessibility, better defaults, more options, and a much more consistent syntax."
-  },
-  {
-    "objectID": "materials/01-intro-quarto.html#summary-of-quarto-rmarkdown",
-    "href": "materials/01-intro-quarto.html#summary-of-quarto-rmarkdown",
-    "title": "Get Started with Quarto",
-    "section": "Summary of Quarto > RMarkdown",
-    "text": "Summary of Quarto > RMarkdown\n\nEasier to organize/structure document and document layout\nFeatures largely cross-format\nBatteries included (it’s installed WITH latest version of RStudio)\nBetter ability to integrate multiple languages in a PROJECT and evaluate code in native language (R in knitr, Python/Julia in Jupyter)\nHTML slides with revealjs are pandoc-compatible, so RStudio Visual Editor works with them"
-  },
-  {
-    "objectID": "materials/01-intro-quarto.html#rendering",
-    "href": "materials/01-intro-quarto.html#rendering",
-    "title": "Get Started with Quarto",
-    "section": "Rendering",
-    "text": "Rendering\n\nRender in RStudio\n\n\n\n\nSystem shell via quarto render\n\n\nquarto render document.qmd # defaults to html\nquarto render document.qmd --to pdf\nquarto render document.qmd --to docx\n\n\n\n\nR console via quarto R package\n\n\nlibrary(quarto)\nquarto_render(\"document.qmd\") # defaults to html\nquarto_render(\"document.qmd\", output_format = \"pdf\")"
-  },
-  {
-    "objectID": "materials/01-intro-quarto.html#what-about-for-data-science-at-work",
-    "href": "materials/01-intro-quarto.html#what-about-for-data-science-at-work",
-    "title": "Get Started with Quarto",
-    "section": "What about for Data Science at Work?",
-    "text": "What about for Data Science at Work?\n\nQuarto can be used in RStudio Team today!\n\n\n\nQuarto v1.0 comes pre-installed in RStudio Workbench 2022.07.1 and later. You can use Quarto in RStudio Workbench’s RStudio IDE, JupyterLab/Jupyter notebooks, or VSCode.\n\n\n\n\nQuarto can be published and re-executed by RStudio Connect!"
+    "text": "What to do with my existing .Rmd or .ipynb?\nFor some of you - nothing changes! Keep using RMarkdown and Jupyter.\n\n\nHowever, most existing .rmd or .ipynb can be rendered as-is via Quarto\nquarto render my-favorite.rmd --to html\n\n\n\nSince Jupyter notebooks can either be treated as a linear document to be re-executed or an already evaluated document there are additional options like: --execute\nquarto render my-favorite.ipynb --to html --execute"
   },
   {
     "objectID": "materials/01-intro-quarto.html#why-quarto-instead-of-rmarkdown",
@@ -194,6 +173,13 @@
     "title": "Get Started with Quarto",
     "section": "Why Quarto, instead of RMarkdown",
     "text": "Why Quarto, instead of RMarkdown\n\nBatteries included, shared syntax\nChoose your own editor and your preferred data science language\nBetter accessibility and richer features out of the box\nMore enhancements overtime - RMarkdown still maintained, but majority of new features built into Quarto\n\n\nCollaboration with other colleagues in other languages - shared format, choose your editor and your native language"
+  },
+  {
+    "objectID": "materials/01-intro-quarto.html#rendering",
+    "href": "materials/01-intro-quarto.html#rendering",
+    "title": "Get Started with Quarto",
+    "section": "Rendering",
+    "text": "Rendering\n\nRender in RStudio\n\n\n\n\nSystem shell via quarto render\n\n\nquarto render document.qmd # defaults to html\nquarto render document.qmd --to pdf\nquarto render document.qmd --to docx\n\n\n\n\nR console via quarto R package\n\n\nlibrary(quarto)\nquarto_render(\"document.qmd\") # defaults to html\nquarto_render(\"document.qmd\", output_format = \"pdf\")"
   },
   {
     "objectID": "materials/01-intro-quarto.html#why-quarto",
@@ -222,13 +208,6 @@
     "title": "Get Started with Quarto",
     "section": "Change your mental model",
     "text": "Change your mental model\n\n\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature \n  on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: Temperature and ozone level.\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n\n  geom_point() + \n  geom_smooth(method = \"loess\"\n)\n```"
-  },
-  {
-    "objectID": "materials/01-intro-quarto.html#quarto",
-    "href": "materials/01-intro-quarto.html#quarto",
-    "title": "Get Started with Quarto",
-    "section": "Quarto",
-    "text": "Quarto\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.\n\n\nNo more copy-paste, no more manually rebuilding analyses from disparate components, no more dread when the data is updated and you need to run an analysis."
   },
   {
     "objectID": "materials/01-intro-quarto.html#anatomy-of-a-quarto-document",
@@ -504,13 +483,6 @@
     "text": "Subfigures"
   },
   {
-    "objectID": "materials/02-authoring.html#navigating-in-the-terminal",
-    "href": "materials/02-authoring.html#navigating-in-the-terminal",
-    "title": "Get Started with Quarto",
-    "section": "Navigating in the terminal",
-    "text": "Navigating in the terminal\nBecause Quarto is a command line interface (CLI), there are times you’ll need to use it via the terminal. A great overview of using the command line and navigating files/directories is available via the Data Carpentries or a great interactive tool for understanding commands: https://tldr.ostera.io\n\n\n\n\n\n\n\n\nCommand\nAction\n\n\n\n\npwd\nPrint name of current working directory\n\n\ncd\nChange current working directory\n\n\nls\nList directory contents\n\n\nquarto --help\nReturn quarto help docs\n\n\nmkdir howdy\nMake a new folder/directory called “howdy”\n\n\nrm howdy/some-file.qmd | Remove\na file called some-file.qmd from the “howdy” folder"
-  },
-  {
     "objectID": "materials/02-authoring.html#subfigures-2",
     "href": "materials/02-authoring.html#subfigures-2",
     "title": "Get Started with Quarto",
@@ -726,6 +698,13 @@
     "title": "Get Started with Quarto",
     "section": "RStudio, quick intro",
     "text": "RStudio, quick intro\n\nUse R Projects, i.e. a .RProj\nOverview of panes\nOverview of R Console vs Terminal\nOverview of Quarto, output inline vs output to pane"
+  },
+  {
+    "objectID": "materials/03-computation-editors.html#navigating-in-the-terminal",
+    "href": "materials/03-computation-editors.html#navigating-in-the-terminal",
+    "title": "Get Started with Quarto",
+    "section": "Navigating in the terminal",
+    "text": "Navigating in the terminal\nBecause Quarto is a command line interface (CLI), there are times you’ll need to use it via the terminal. A great overview of using the command line and navigating files/directories is available via the Data Carpentries or a great interactive tool for understanding commands: https://tldr.ostera.io\n\n\n\n\n\n\n\n\nCommand\nAction\n\n\n\n\npwd\nPrint name of current working directory\n\n\ncd\nChange current working directory\n\n\nls\nList directory contents\n\n\nquarto --help\nReturn quarto help docs\n\n\nmkdir howdy\nMake a new folder/directory called “howdy”\n\n\nrm howdy/some-file.qmd | Remove\na file called some-file.qmd from the “howdy” folder"
   },
   {
     "objectID": "materials/03-computation-editors.html#rstudio",
@@ -964,6 +943,251 @@
     "title": "Get Started with Quarto",
     "section": "format: PDF",
     "text": "format: PDF\nTIP! - pandoc divs/spans are generally transferrable - CSS is not transferable - Lean on Quarto/Pandoc tooling and then reach for raw CSS/LaTeX"
+  },
+  {
+    "objectID": "materials/05-websites.html#websites-1",
+    "href": "materials/05-websites.html#websites-1",
+    "title": "Get Started with Quarto",
+    "section": "Websites",
+    "text": "Websites\n\nWebsites are essentially format: html + a Quarto Project\n\n\n\nWebsite is different than format: html in that it has multiple pages\nWebsite is our first exploration into Quarto Projects\n\n\n\n\nWebsite/book are very similar in that they associate multiple pages/resources into a connected resource"
+  },
+  {
+    "objectID": "materials/05-websites.html#why-not-wordpress-tumblr-medium.com-blogger.com-etc1",
+    "href": "materials/05-websites.html#why-not-wordpress-tumblr-medium.com-blogger.com-etc1",
+    "title": "Get Started with Quarto",
+    "section": "Why not WordPress, Tumblr, Medium.com, Blogger.com, etc?1",
+    "text": "Why not WordPress, Tumblr, Medium.com, Blogger.com, etc?1\n\nNo R Markdown support (even math support is often nonexistent or awkward)\nHuge benefits of static websites compared to dynamic websites\nall static files, no PHP or databases, no login/password, work everywhere (even offline)\ntypically fast to visit (no computation needed on the server side), and easy to speed up via CDN\n\nFrom Yihui: https://slides.yihui.name/2017-rmarkdown-UNL-Yihui-Xie.html#36"
+  },
+  {
+    "objectID": "materials/05-websites.html#personal-blog",
+    "href": "materials/05-websites.html#personal-blog",
+    "title": "Get Started with Quarto",
+    "section": "Personal blog:",
+    "text": "Personal blog:\nLimited and gated at Medium.com\nhttps://medium.com/towards-data-science/a-gentle-guide-to-statistics-in-r-ccb91cc1177e\nvs\nFull control at on my own page\nhttps://themockup.blog/posts/2018-12-10-a-gentle-guide-to-tidy-statistics-in-r/"
+  },
+  {
+    "objectID": "materials/05-websites.html#section",
+    "href": "materials/05-websites.html#section",
+    "title": "Get Started with Quarto",
+    "section": "",
+    "text": "Create a website\nquarto create-project MySiteName --type website\nCreate a blog\nquarto create-project MyBlogName --type website:blog\n\nRStudio > New Project > New Quarto Blog"
+  },
+  {
+    "objectID": "materials/05-websites.html#creating-a-blog",
+    "href": "materials/05-websites.html#creating-a-blog",
+    "title": "Get Started with Quarto",
+    "section": "Creating a blog",
+    "text": "Creating a blog\n$ quarto create-project MyBlogName --type website:blog\n\nCreating project at myblog:\n  - Created _quarto.yml\n  - Created index.qmd\n  - Created posts/welcome/index.qmd\n  - Created posts/post-with-code/index.qmd\n  - Created about.qmd\n  - Created styles.css\n  - Created posts/_metadata.yml"
+  },
+  {
+    "objectID": "materials/05-websites.html#navigation-structure",
+    "href": "materials/05-websites.html#navigation-structure",
+    "title": "Get Started with Quarto",
+    "section": "Navigation & Structure",
+    "text": "Navigation & Structure\n\n\n\nFile\nDescription\n\n\n\n\n_quarto.yml\nQuarto project file.\n\n\nindex.qmd\nBlog home page.\n\n\nabout.qmd\nBlog about page.\n\n\nposts/\nDirectory containing posts\n\n\nposts/_metadata.yml\nShared options for posts\n\n\nstyles.css\nCustom CSS for website"
+  },
+  {
+    "objectID": "materials/05-websites.html#create-a-blog-1",
+    "href": "materials/05-websites.html#create-a-blog-1",
+    "title": "Get Started with Quarto",
+    "section": "Create a blog",
+    "text": "Create a blog\n\nA blog is a website with specific “opinions” already made\nIncludes a listing automatically from posts directory\nCan build custom listings in several ways"
+  },
+  {
+    "objectID": "materials/05-websites.html#core-blog-workflow",
+    "href": "materials/05-websites.html#core-blog-workflow",
+    "title": "Get Started with Quarto",
+    "section": "Core blog workflow",
+    "text": "Core blog workflow\n\nCreate a new folder under /posts - this folder will be the “slug” URL (like themockup.blog/2022-07-25-new-post/)\nCreate a new index.qmd within the new folder"
+  },
+  {
+    "objectID": "materials/05-websites.html#rendering-posts",
+    "href": "materials/05-websites.html#rendering-posts",
+    "title": "Get Started with Quarto",
+    "section": "Rendering posts",
+    "text": "Rendering posts\n\nOn a specific post, Render with RStudio > Render\nBuild tab > Render/Preview Website\n\nThese will preview the entire website\n\n\nRender via termianl with quarto render on a specific post - this will just render that specific post\n\n\n\nWhen you render the website, it will re-execute code in older posts. Not ideal in many situations!"
+  },
+  {
+    "objectID": "materials/05-websites.html#freeze",
+    "href": "materials/05-websites.html#freeze",
+    "title": "Get Started with Quarto",
+    "section": "Freeze",
+    "text": "Freeze\n\nYou can use the freeze option to denote that computational documents should never be re-rendered during a global project render, or alternatively only be re-rendered when their source file changes\n\n\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes\n\n\nfreeze: true is typically added to a _metadata.yml file within a specific directory, affecting all files in that directory.\nIn the case of a blog - the _metadata.yml is saved at the root of the posts directory. You can have it only within specific subdirectories for more complex sites."
+  },
+  {
+    "objectID": "materials/05-websites.html#cache",
+    "href": "materials/05-websites.html#cache",
+    "title": "Get Started with Quarto",
+    "section": "Cache",
+    "text": "Cache\nCache on the other hand, stores the results of computations for a specific file.\n\nNote that cache invalidation is triggered by changes in chunk source code (or other cache attributes you’ve defined).\n\nexecute:\n  cache: true\n\nI typically use cache throughout various types of outputs when I have computationally expensive chunks. Think a tidymodels workshop website that is demo’ing with grid-tuning."
+  },
+  {
+    "objectID": "materials/05-websites.html#themes",
+    "href": "materials/05-websites.html#themes",
+    "title": "Get Started with Quarto",
+    "section": "Themes",
+    "text": "Themes\nhttps://quarto.org/docs/websites/website-blog.html#themes\ndefault, cerulean, cosmo, cyborg, darkly, flatly, journal, litera, lumen, lux, materia, minty, morph, pulse, quartz, sandstone, simplex, sketchy, slate, solar, spacelab, superhero, united, vapor, yeti, zephyr\n\nTo change theme, modify the bottom of your website’s _quarto.yml\nformat:\n  html:\n    theme: cosmo"
+  },
+  {
+    "objectID": "materials/05-websites.html#themes-1",
+    "href": "materials/05-websites.html#themes-1",
+    "title": "Get Started with Quarto",
+    "section": "Themes",
+    "text": "Themes"
+  },
+  {
+    "objectID": "materials/05-websites.html#adding-an-about-page",
+    "href": "materials/05-websites.html#adding-an-about-page",
+    "title": "Get Started with Quarto",
+    "section": "Adding an About page",
+    "text": "Adding an About page\n---yaml\ntwitter-card:\n  image: images/profile-preview.png\n  creator: \"@thomas_mock\"\nopen-graph: true\ntitle: \"Tom Mock\"\nimage: images/profile-preview.png\nabout:\n  template: trestles\n  links:\n    - icon: twitter\n      text: Twitter\n      href: https://twitter.com/thomasmock\n    - icon: github\n      text: Github\n      href: https://github.com/jthomasmock\n---"
+  },
+  {
+    "objectID": "materials/05-websites.html#about-page-templates",
+    "href": "materials/05-websites.html#about-page-templates",
+    "title": "Get Started with Quarto",
+    "section": "About page templates",
+    "text": "About page templates\nabout:\n  template: trestles\n\njollatrestlessolanamarqueebroadside"
+  },
+  {
+    "objectID": "materials/05-websites.html#landing-page",
+    "href": "materials/05-websites.html#landing-page",
+    "title": "Get Started with Quarto",
+    "section": "Landing page",
+    "text": "Landing page\n\nThe landing page for your website defaults to the blog/listings page\nyour-proj/index.qmd becomes your “home page”\n\n\n\nblogdown users might be used to/prefer your landing page being your “about me” page\nThis is easy to do with renaming your index.qmd -> blog.qmd and about.qmd -> index.qmd\n\n\n\n\nRe-structuring your website also requires modifying your _quarto.yml\n\nwebsite:\n  title: \"My blog name\"\n  site-url: \"https://MyBlogSiteUrl.com\"\n  navbar:\n    right:\n     - blog.qmd\n     - icon: twitter\n       href: \"https://twitter.com/my_user_name\"\nExample: https://www.ericekholm.com/posts/demo-quarto-site/"
+  },
+  {
+    "objectID": "materials/05-websites.html#listings",
+    "href": "materials/05-websites.html#listings",
+    "title": "Get Started with Quarto",
+    "section": "Listings",
+    "text": "Listings"
+  },
+  {
+    "objectID": "materials/05-websites.html#listings-1",
+    "href": "materials/05-websites.html#listings-1",
+    "title": "Get Started with Quarto",
+    "section": "Listings",
+    "text": "Listings\n\n\n\nType\nDescription\n\n\n\n\ndefault\nA blog style list of items.\n\n\ntable\nA table of listings.\n\n\ngrid\nA grid of listing cards."
+  },
+  {
+    "objectID": "materials/05-websites.html#listings-2",
+    "href": "materials/05-websites.html#listings-2",
+    "title": "Get Started with Quarto",
+    "section": "Listings",
+    "text": "Listings\n\nDefaultGridTable\n\n\n\nBy default, listings will appear in full width rows that display the item’s metadata (author and date), title, description, and image.\n\n\n\n\n\nGrid style listings display a card for each item.\n\n\n\n\n\nThe table listing style provides a traditional tabular layout."
+  },
+  {
+    "objectID": "materials/05-websites.html#listing-location",
+    "href": "materials/05-websites.html#listing-location",
+    "title": "Get Started with Quarto",
+    "section": "Listing location",
+    "text": "Listing location\n---\ntitle: \"Listing Example\"\nlisting:\n  id: sample-listings\n  contents: posts\n  type: table\n---\n\nYou can review the following documents for additional information:\n\n::: {#sample-listings}\n:::"
+  },
+  {
+    "objectID": "materials/05-websites.html#populating-listings",
+    "href": "materials/05-websites.html#populating-listings",
+    "title": "Get Started with Quarto",
+    "section": "Populating listings",
+    "text": "Populating listings\n---\ntitle: \"Listing Example\"\nlisting:\n  contents: posts\n---\n\ntitle: \"Listing Example\"\nlisting:\n  - id: lab-reports\n    contents: \"reports/*.qmd\"\n    type: grid\n  - id: lab-notes\n    contents: \"lab-notes/*reports.qmd\"\n    type: table\n\n\nSome stuff\n\n::: {#lab-reports}\n:::\n\nSome other stuff\n\n::: {#lab-notes}\n:::"
+  },
+  {
+    "objectID": "materials/05-websites.html#manual-listings",
+    "href": "materials/05-websites.html#manual-listings",
+    "title": "Get Started with Quarto",
+    "section": "Manual listings",
+    "text": "Manual listings\nSometimes you might want to build out your own listing and link to arbitrary content rather than specific rendered file.qmd\n---\nlisting:\n  contents:\n    - author: First Author\n      title: [First Title](a-url.com)\n    - author: Second Author\n      title: [Second Title](a-url2.com)\n---\n\n---\nlisting:\n  contents:\n    - items.yml\n---\n- author: Tom Mock\n  title: <a href='quarto.org'>An intro to Quarto</a>\n- Author: Katie Masiello\n  title: <a href='pins.rstudio.com'>Intro to pins</a>"
+  },
+  {
+    "objectID": "materials/05-websites.html#complex-example",
+    "href": "materials/05-websites.html#complex-example",
+    "title": "Get Started with Quarto",
+    "section": "Complex Example:",
+    "text": "Complex Example:"
+  },
+  {
+    "objectID": "materials/05-websites.html#complex-example-index.qmd-yaml",
+    "href": "materials/05-websites.html#complex-example-index.qmd-yaml",
+    "title": "Get Started with Quarto",
+    "section": "Complex Example, index.qmd YAML",
+    "text": "Complex Example, index.qmd YAML\nlisting: \n  - id: etl\n    contents: \"etl.yml\"\n    type: grid\n    grid-columns: 2\n    image-height: 100px\n  - id: modeling\n    contents: \"modeling.yml\"\n    type: grid\n    image-height: 100px\n    grid-columns: 2\n  - id: pins\n    contents: \"pins.yml\"\n    type: table\n    field-display-names: \n      subtitle: \"Description\"\n      date-modified: \"Last Updated\"\n  - id: api\n    contents: \"api.yml\"\n    type: default\n    image-align: left\n    image-height: 75px\n  - id: apps\n    contents: \"apps.yml\"\n    type: default\n    image-align: left\n    image-height: 75px\n---"
+  },
+  {
+    "objectID": "materials/05-websites.html#publishing",
+    "href": "materials/05-websites.html#publishing",
+    "title": "Get Started with Quarto",
+    "section": "Publishing",
+    "text": "Publishing\n\n\n\nDestination\nDescription\n\n\n\n\nGitHub Pages\nPublish content based on source code managed within a GitHub repository. Use GitHub Pages when the source code for your document or site is hosted on GitHub.\n\n\nRStudio Connect\nPublishing platform for secure sharing of data products within an organization. Use RStudio Connect when you want to publish content within an organization rather than on the public internet.\n\n\nNetlify\nProfessional web publishing platform. Use Netlify when you want support for custom domains, authentication, previewing branches, and other more advanced capabilities.\n\n\nOther Services\nContent rendered with Quarto uses standard formats (HTML, PDFs, MS Word, etc.) that can be published anywhere. Use this if one of the methods above don’t meet your requirements."
+  },
+  {
+    "objectID": "materials/05-websites.html#publishing-1",
+    "href": "materials/05-websites.html#publishing-1",
+    "title": "Get Started with Quarto",
+    "section": "Publishing",
+    "text": "Publishing\nStatic Only\n\nquarto CLI: quarto publish DESTINATION DOCUMENT.QMD\nquarto R package: quarto::quarto_publish_???()\n\nCode\n\nEvaluate R/Python code and render on a schedule\nRStudio Connect\nrsconnect::deployDoc(quarto = \"path/to/quarto\")\n\nrsconnect::deployDoc(quarto = quarto::quarto_path())"
+  },
+  {
+    "objectID": "materials/05-websites.html#static-publish",
+    "href": "materials/05-websites.html#static-publish",
+    "title": "Get Started with Quarto",
+    "section": "Static Publish",
+    "text": "Static Publish\n\nquarto::quarto_publish_???()\n\nquarto_publish_site(server = \"rstudioconnect.example.com\")\nquarto_publish_doc(server = \"rpubs.com\")\nquarto_publish_app(server = \"shinyapps.io\")\n\nquarto publish DESTINATION DOCUMENT.QMD\n\nquarto publish netlify document.qmd\nquarto publish gh-pages document.qmd\nquarto publish connect document.qmd"
+  },
+  {
+    "objectID": "materials/05-websites.html#netlify",
+    "href": "materials/05-websites.html#netlify",
+    "title": "Get Started with Quarto",
+    "section": "Netlify",
+    "text": "Netlify\n\nCheat code: Netlify drop"
+  },
+  {
+    "objectID": "materials/05-websites.html#github-pages",
+    "href": "materials/05-websites.html#github-pages",
+    "title": "Get Started with Quarto",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n{=html, echo=FALSE} <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n\nName your content index.qmd to generate index.html -> Push to GitHub\n\n\n\nStep 2: Name your slides index.qmd pic.twitter.com/wLXN43rUlZ\n\n— Emil Hvitfeldt (@Emil_Hvitfeldt) July 21, 2022"
+  },
+  {
+    "objectID": "materials/05-websites.html#websites-2",
+    "href": "materials/05-websites.html#websites-2",
+    "title": "Get Started with Quarto",
+    "section": "Websites",
+    "text": "Websites\nSimilar to blog, but less of a focus on listing/posts and more focus on individual pages and overall navigation."
+  },
+  {
+    "objectID": "materials/05-websites.html#quarto-project",
+    "href": "materials/05-websites.html#quarto-project",
+    "title": "Get Started with Quarto",
+    "section": "Quarto Project",
+    "text": "Quarto Project\n\nhttps://quarto.org/docs/projects/quarto-projects.html\n\n\nWhen you create a project, a _quarto.yml config file is created. Here is an example of what the _quarto.yml looks like:\n\nproject:\n  output-dir: _output\n\ntoc: true\nnumber-sections: true\nbibliography: references.bib  \n  \nformat: #< default format inherited by other documents\n  html:\n    css: styles.css"
+  },
+  {
+    "objectID": "materials/05-websites.html#more-complex-example",
+    "href": "materials/05-websites.html#more-complex-example",
+    "title": "Get Started with Quarto",
+    "section": "More complex example",
+    "text": "More complex example"
+  },
+  {
+    "objectID": "materials/05-websites.html#quarto-projects",
+    "href": "materials/05-websites.html#quarto-projects",
+    "title": "Get Started with Quarto",
+    "section": "Quarto Projects",
+    "text": "Quarto Projects\n\nMinimal project has at least 1x file and 1x _quarto.yml\nA project is a directory (and can have sub-directories)\n\n\nA typical project is used to:\n\nAggregate content (website/blog/book)\n\nShare metadata (YAML config) across multiple files\n\nRender an entire directory together or redirect output to another directory\n\nFreeze computation across a project or team"
+  },
+  {
+    "objectID": "materials/05-websites.html#books",
+    "href": "materials/05-websites.html#books",
+    "title": "Get Started with Quarto",
+    "section": "Books",
+    "text": "Books\n\nThe structure of a Quarto book can be as simple as a list of chapters, or can alternatively incorporate multiple parts and/or appendices. Quarto book chapters and sections are automatically numbered (for cross-referencing), however you can also specify that some parts of the book should remain unnumbered."
+  },
+  {
+    "objectID": "materials/05-websites.html#book-structure",
+    "href": "materials/05-websites.html#book-structure",
+    "title": "Get Started with Quarto",
+    "section": "Book structure",
+    "text": "Book structure\nproject:\n  type: book\nbook:\n  title: \"mybook\"\n  author: \"Jane Doe\"\n  date: \"8/18/2021\"\n  chapters:\n    - index.qmd\n    - intro.qmd\n    - summary.qmd\n    - references.qmd\nbibliography: references.bib\nformat:\n  html:\n    theme: cosmo\n  pdf:\n    documentclass: scrreport\n  epub:\n    cover-image: cover.png\n\n\n\nQuarto in 2 Hours"
   },
   {
     "objectID": "materials/static/custom-layout.html",

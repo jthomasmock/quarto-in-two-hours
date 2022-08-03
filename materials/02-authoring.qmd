@@ -627,32 +627,9 @@ Two states of Howard
 
 ## Subfigures
 
-<iframe src="../../static/sub-figure.html" height="800px" width="1200px">
+<iframe src="https://jthomasmock.github.io/quarto-in-two-hours/materials/static/sub-figure.html" height="800px" width="1200px">
 
 </iframe>
-
-
-## Navigating in the terminal
-
-Because Quarto is a command line interface (CLI), there are times you'll need to use it via the terminal. A great overview of using the command line and navigating files/directories is available via the [Data Carpentries](https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html) or a great interactive tool for understanding commands: <https://tldr.ostera.io>
-
-. . .
-
-+------------------------------------+-------------------------------------------------------+
-| Command                            | Action                                                |
-+====================================+=======================================================+
-| `pwd`                              | Print name of current working directory               |
-+------------------------------------+-------------------------------------------------------+
-| `cd`                               | Change current working directory                      |
-+------------------------------------+-------------------------------------------------------+
-| `ls`                               | List directory contents                               |
-+------------------------------------+-------------------------------------------------------+
-| `quarto --help`                    | Return `quarto` help docs                             |
-+------------------------------------+-------------------------------------------------------+
-| `mkdir howdy`                      | Make a new folder/directory called "howdy"            |
-+------------------------------------+-------------------------------------------------------+
-| `rm howdy/some-file.qmd` \| Remove | a file called `some-file.qmd` from the "howdy" folder |
-+------------------------------------+-------------------------------------------------------+
 
 
 ## Subfigures

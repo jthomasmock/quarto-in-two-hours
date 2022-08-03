@@ -220,7 +220,6 @@ Or use the Command Palette: <kbd>`Cmd + Shift + P`</kbd>/<kbd>`Ctrl + Shift + P`
 - Open `materials/workshop/03-computation/penguin-analysis.qmd`
 - Insert three total code chunks with the shortcut <kbd>`Ctrl + Alt + I`</kbd>
   - Chunk 1: load `tidyverse` and `palmerpenguins` R packages and print the `penguins` dataset with `glimpse()`
-  - Chunk 2: Create a summary by sex/species of the average and median body weight and bill length
   - Chunk 3: Create a plot of body mass (x) by bill length (y)
   - Render it!
 
@@ -469,7 +468,7 @@ Some examples
 ::: {.column width="50%"}
 
 ```{r, echo = FALSE, out.width="80%"}
-#| fig-alt: "A screenshot of a RMarkdown document inside RStudio. The screenshot highlights the automatically generated document outline for each chunk name."
+#| fig-alt: "A screenshot of a RMarkdown document inside RStudio. The screenshot highlights the automatically generated document  outline for each chunk name."
 knitr::include_graphics("images/qmd-outline.png")
 ```
 
@@ -590,6 +589,28 @@ mpg_cars
 - Overview of panes
 - Overview of R Console vs Terminal
 - Overview of Quarto, output inline vs output to pane
+
+## Navigating in the terminal
+
+Because Quarto is a command line interface (CLI), there are times you'll need to use it via the terminal. A great overview of using the command line and navigating files/directories is available via the [Data Carpentries](https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html) or a great interactive tool for understanding commands: <https://tldr.ostera.io>
+
+. . .
+
++------------------------------------+-------------------------------------------------------+
+| Command                            | Action                                                |
++====================================+=======================================================+
+| `pwd`                              | Print name of current working directory               |
++------------------------------------+-------------------------------------------------------+
+| `cd`                               | Change current working directory                      |
++------------------------------------+-------------------------------------------------------+
+| `ls`                               | List directory contents                               |
++------------------------------------+-------------------------------------------------------+
+| `quarto --help`                    | Return `quarto` help docs                             |
++------------------------------------+-------------------------------------------------------+
+| `mkdir howdy`                      | Make a new folder/directory called "howdy"            |
++------------------------------------+-------------------------------------------------------+
+| `rm howdy/some-file.qmd` \| Remove | a file called `some-file.qmd` from the "howdy" folder |
++------------------------------------+-------------------------------------------------------+
 
 ## RStudio
 

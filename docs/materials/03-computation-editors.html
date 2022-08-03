@@ -540,7 +540,6 @@
 <li>Insert three total code chunks with the shortcut <kbd><code>Ctrl + Alt + I</code></kbd>
 <ul>
 <li>Chunk 1: load <code>tidyverse</code> and <code>palmerpenguins</code> R packages and print the <code>penguins</code> dataset with <code>glimpse()</code></li>
-<li>Chunk 2: Create a summary by sex/species of the average and median body weight and bill length</li>
 <li>Chunk 3: Create a plot of body mass (x) by bill length (y)</li>
 <li>Render it!</li>
 </ul></li>
@@ -874,7 +873,7 @@ fig.dpi vs fig-dpi</code></pre>
 <div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="images/qmd-outline.png" alt="A screenshot of a RMarkdown document inside RStudio. The screenshot highlights the automatically generated document outline for each chunk name." style="width:80.0%"></p>
+<p><img data-src="images/qmd-outline.png" alt="A screenshot of a RMarkdown document inside RStudio. The screenshot highlights the automatically generated document  outline for each chunk name." style="width:80.0%"></p>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -1010,6 +1009,50 @@ Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2</code></pre>
 <li>Overview of R Console vs Terminal</li>
 <li>Overview of Quarto, output inline vs output to pane</li>
 </ul>
+</section>
+<section id="navigating-in-the-terminal" class="slide level2">
+<h2>Navigating in the terminal</h2>
+<p>Because Quarto is a command line interface (CLI), there are times you’ll need to use it via the terminal. A great overview of using the command line and navigating files/directories is available via the <a href="https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html">Data Carpentries</a> or a great interactive tool for understanding commands: <a href="https://tldr.ostera.io" class="uri">https://tldr.ostera.io</a></p>
+<div class="fragment">
+<table>
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>pwd</code></td>
+<td>Print name of current working directory</td>
+</tr>
+<tr class="even">
+<td><code>cd</code></td>
+<td>Change current working directory</td>
+</tr>
+<tr class="odd">
+<td><code>ls</code></td>
+<td>List directory contents</td>
+</tr>
+<tr class="even">
+<td><code>quarto --help</code></td>
+<td>Return <code>quarto</code> help docs</td>
+</tr>
+<tr class="odd">
+<td><code>mkdir howdy</code></td>
+<td>Make a new folder/directory called “howdy”</td>
+</tr>
+<tr class="even">
+<td><code>rm howdy/some-file.qmd</code> | Remove</td>
+<td>a file called <code>some-file.qmd</code> from the “howdy” folder</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="rstudio" class="slide level2">
 <h2>RStudio</h2>
